@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="MyCSharpProgram/MyCSharpProgram.csproj" />
+  <Project Path="TipCalculator/TipCalculator.csproj" />
+</Solution>
