@@ -1,6 +1,10 @@
 ﻿// Store a Fahrenheit temperature
 
-decimal fahrenheit = 94m;
+Console.WriteLine("Enter A tempreture: ");
+
+Console.Write("Fahrenheit: ");
+
+decimal fahrenheit = Convert.ToDecimal(Console.ReadLine());
 
 
 // Convert it to Celsius
