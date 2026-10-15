@@ -1,16 +1,17 @@
 ﻿// Store a Fahrenheit temperature
 
-Console.WriteLine("Enter A tempreture: ");
+Console.WriteLine("Enter a temperature: ");
 
-Console.Write("Fahrenheit: ");
+Console.Write("In Fahrenheit: ");
 
-decimal fahrenheit = Convert.ToDecimal(Console.ReadLine());
-
-
-// Convert it to Celsius
-
-decimal celsius = (fahrenheit - 32) * 5 / 9;
-
-// Display the result
-
-Console.WriteLine($"{fahrenheit:F1}°F is {celsius:F1}°C");
+if (decimal.TryParse(Console.ReadLine(), out decimal fahrenheit))
+{
+    // Convert it to Celsius
+    decimal celsius = (fahrenheit - 32) * 5 / 9;
+    // Display the result
+    Console.WriteLine($"{fahrenheit:F1}°F is {celsius:F1}°C");
+}
+else
+{
+    Console.WriteLine("Invalid input, enter a number! ");
+};
